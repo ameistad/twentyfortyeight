@@ -1,24 +1,12 @@
 # twentyfortyeight
 
-## Project setup
+2048 built with [Solid](https://www.solidjs.com/).
+
 ```
 npm install
+npm run dev      # start dev server
+npm run build    # production build in dist/
+npm run preview  # serve the production build
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Controls: arrow keys or swipe to move, Ctrl/Cmd+Z to undo.
