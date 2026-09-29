@@ -28,7 +28,7 @@ export default function Grid(props) {
             <div
               class="tile-inner"
               classList={{ 'tile-new': tile.isNew, 'tile-merged': tile.merged }}
-              style={{ background: valueColors[tile.value] || '#3f0000' }}
+              style={{ background: valueColors[tile.value] || '#3f0000', '--digits': String(tile.value).length }}
             >
               {tile.value}
             </div>

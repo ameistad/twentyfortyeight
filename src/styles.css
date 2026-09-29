@@ -71,8 +71,11 @@ body {
   align-items: center;
   height: 100%;
   border-radius: 0.25rem;
-  font-size: 2rem;
+  /* Budget 0.6em per digit, with room between the number and tile edges. */
+  font-size: min(2rem, calc((var(--cell) - 0.75rem) / var(--digits) / 0.6));
   font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
 }
 .tile-inner.tile-new {
   animation: appear 200ms ease 100ms backwards;
