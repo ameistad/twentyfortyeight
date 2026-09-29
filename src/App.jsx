@@ -63,8 +63,8 @@ export default function App() {
         <GameControls onUndo={undo} onRestart={restart} />
       </div>
       <div class="info-block">
-        Made by <a href="https://twitter.com/ameistad">@ameistad</a>. Source available on{' '}
-        <a href="https://github.com/ameistad/twentyfortyeight">Github</a>.
+        Made by <a href="https://github.com/ameistad">ameistad</a>. Source available on{' '}
+        <a href="https://github.com/ameistad/twentyfortyeight">GitHub</a>.
       </div>
     </div>
   );
