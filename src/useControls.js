@@ -16,6 +16,7 @@ export function useControls({ onMove, onUndo }) {
   };
 
   const handleKeydown = event => {
+    if (arrowKeys[event.key]) event.preventDefault();
     if ((event.ctrlKey || event.metaKey) && event.key === 'z') {
       event.preventDefault();
       onUndo();

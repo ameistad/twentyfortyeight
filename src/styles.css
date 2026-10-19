@@ -1,8 +1,9 @@
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
   overscroll-behavior-y: contain;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 #app {
   display: flex;
@@ -112,8 +113,22 @@ body {
   }
 }
 
-.mr-4 {
-  margin-right: 4rem;
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+}
+.file-status {
+  max-width: 22rem;
+  margin: 1rem auto 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.file-status:empty {
+  display: none;
+}
+.file-error {
+  color: #9c4221;
 }
 .button {
   padding: 0.5rem 1rem;
@@ -121,4 +136,17 @@ body {
   background: #ed8936;
   border: 1px solid #ed8936;
   font-weight: 700;
+  cursor: pointer;
+}
+.button-secondary {
+  background: #fffaf0;
+  color: #67200a;
+}
+.button:focus-visible {
+  outline: 2px solid #67200a;
+  outline-offset: 3px;
+}
+.button:disabled {
+  cursor: wait;
+  opacity: 0.6;
 }
